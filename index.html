@@ -5,16 +5,16 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>el2zay</title>
-  <meta content="Bienvenue sur le site de el2zay ici vous pourrez trouver des informations sur moi ainsi que mes projets." name="description">
-  <meta content="el2zay, Elbot" name="keywords">
+  <title>Elbot</title>
+  <meta content="Ici vous trouverez: Les informations sur Elbot, sa page d'aide et le lien d'invitation." name="description">
+  <meta content="elbot" name="keywords">
 
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
@@ -28,8 +28,8 @@
   <link href="assets/css/style.css" rel="stylesheet">
 
   <!-- =======================================================
-  * Template Name: MyResume - v4.3.0
-  * Template URL: https://bootstrapmade.com/free-html-bootstrap-template-my-resume/
+  * Template Name: Techie - v4.3.0
+  * Template URL: https://bootstrapmade.com/techie-free-skin-bootstrap-3/
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
@@ -37,39 +37,45 @@
 
 <body>
 
-
   <!-- ======= Header ======= -->
-  <header id="header" class="d-flex flex-column justify-content-center">
+  <header id="header" class="fixed-top ">
+    <div class="container d-flex align-items-center justify-content-between">
+      <h1 class="logo"><a href="https://el2zay.is-a.dev">ΞLIΞ</a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
-    <nav id="navbar" class="navbar nav-menu">
-      <ul>
-        <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
-        <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>À Propos</span></a></li>
-        <li><a href="#services" class="nav-link scrollto"><i class="bx bx-server"></i> <span>Projets</span></a></li>
-      </ul>
-    </nav><!-- .nav-menu -->
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Accueil</a></li>
+          <li><a class="nav-link scrollto" href="#about">À propos</a></li>
+          <li><a class="nav-link scrollto" href="#services">Help</a></li>
+            <ul>
+             
+          <li><a class="getstarted scrollto" href="https://discord.com/api/oauth2/authorize?client_id=809344905674489866&permissions=260386455489&scope=bot">Invitez-moi</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
 
+    </div>
   </header><!-- End Header -->
 
-  
-
   <!-- ======= Hero Section ======= -->
-  <section id="hero" class="d-flex flex-column justify-content-center">
-    <div class="container" data-aos="zoom-in" data-aos-delay="100">
-      <h1>Elie Z.</h1>
-      <p>Je suis un <span class="typed" data-typed-items="Développeur, Monteur"></span></p>
-      <div class="social-links">
-        <a href="https://instagram.com/el2zay" class="instagram"><i class="bx bxl-instagram"></i></a>
-        <a href="https://twitter.com/el2zay" class="twitter"><i class="bx bxl-twitter"></i></a>
-        <a href="https://www.github.com/el2zay" class="github"><i class="bx bxl-github"></i></a>
-        <a href="https://www.youtube.com/channel/UCZHprEd5P935nlVoFR_kqew" class="youtube"><i class="bx bxl-youtube"></i></a>
-        <a href="https://dsc.bio/el2zay" class="discord"><i class="bx bxl-discord"></i></a>
-        <a href="mailto:el2zay.contact@gmail.com" class="contact"><i class='bx bx-envelope'></i></i></a>
+  <section id="hero" class="d-flex align-items-center">
+
+    <div class="container-fluid" data-aos="fade-up">
+      <div class="row justify-content-center">
+        <div class="col-xl-5 col-lg-6 pt-3 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center">
+          <h1>ELBOT</h1>
+          <h2>Un bot Discord qui fait plein de petits trucs</h2>
+          <div><a href="https://discord.com/api/oauth2/authorize?client_id=809344905674489866&permissions=260386455489&scope=bot" class="btn-get-started scrollto">Invitez-moi</a></div>
+        </div>
+        <div class="col-xl-4 col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="150">
+          <img src="assets/img/hero-img.png" class="img-fluid animated" alt="">
+        </div>
       </div>
     </div>
-  </section><!-- End Hero -->
 
-  <main id="main">
+  </section><!-- End Hero -->
 
   <main id="main">
 
@@ -77,123 +83,290 @@
     <section id="about" class="about">
       <div class="container">
 
-        <div class="section-title">
-          <h2>À propos</h2>
-          <p>Je m'appelle Elie, <br> J'ai commancé à coder en JS il y a pas très longtemps et j'aime bien tester des choses. Je monte aussi des vidéos avec FinalCutPro!</p>
-        </div>
-
         <div class="row">
-          <div class="col-lg-4" data-aos="fade-right">
-            <img src="assets/img/profile-img.jpg" class="img-fluid" alt="">
+          <div class="col-lg-6 order-1 order-lg-2" data-aos="zoom-in" data-aos-delay="150">
+            <img src="assets/img/about.jpg" class="img-fluid" alt="">
           </div>
-          <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
-            <h3>Développeur JavaScript </h3>
-            <p class="fst-italic">
-              Voici mes informations et mes adresses de contact.
+          <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content" data-aos="fade-right">
+            <h3>Concrètement, Elbot c'est quoi?</h3>
+            <p class="fst-normal">
+              Elbot est un bot discord créer et codé par <a href="https://el2zay.is-a.dev">el2zay</a> et codé aussi à l'aide de <a href="https://johan-stickman.is-a.dev">Johan</a>. <br> Il a des fonctions basique comme des commandes clear,say et infoserver. Il permet de diffuser de la musique dans des salons vocaux. Elbot est un bot principalement fun, il a plusieurs références française et il a plein d'autres fonctionnalités. Bien entendu Elbot est toujours en cours de développement et j'ajoute petit à petit des fonctions chaque semaines.<br>
+             Pour voir toutes les commandes vous pouvez voir la page <a href="#services">d'aide</a></li>
+            </li></a>
+            
             </p>
-            <div class="row">
-              <div class="col-lg-6">
-                <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Anniversaire:</strong> <span>1 Juillet</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Ville:</strong> <span>Paris, France</span></li>
-                </ul>
-              </div>
-              <div class="col-lg-6">
-                <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>14</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>el2zay.contact@gmail.com</span></li>
-                </ul>
-              </div>
-            </div>
-            <p>
-              
-            </p>
+            <ul>
+              <li><i class="bi bi-check-circle"></i> En ligne 7j/7 24h/24</li>
+              <li><i class="bi bi-check-circle"></i> Gratuit et Open Source</li>
+              <li><i class="bi bi-check-circle"></i> Codé en JavaScript et Python</li>
+              <li><i class="bi bi-check-circle"></i>Musique</li>
+              <li><i class="bi bi-check-circle"></i>Surveillé par Watchbot</li>
+            </ul>
           </div>
         </div>
 
       </div>
-      <br>
-      <br>
-    
-     
     </section><!-- End About Section -->
 
-
-    
-
-   <!-- ======= Header ======= -->
- <header id="header1" class="fixed-top">
-  <div class="container d-flex align-items-center justify-content-between">
-
-  <h1 class="logo"><a href="index.html"></a></h1>
-    <!-- Uncomment below if you prefer to use an image logo -->
-    <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>
-
-   <!----
-    <nav id="navbar" class="navbar">
-      <ul>
-        <li><br>  
-          --->
-         <!--- <a href="" class="btn-get-started scrollto"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAC4UlEQVR4Xu2b4XHUMBBG9zoIHaQD0gHQQUqACqCDpAQ6gA4oIUkFKYUSYHbmLnNzY1u7tvY+jfPub3T6pPe8kqUkB+MjJXCQphNuCBA/BAjYuYDPx/k9i+c5bHxlBXw1s1/HmX8zs9/DUhAOrErAOfzT9JAwIbpCwBR8JMxUWW8BS/CRUFwBEfhIuJCQqYAnMzu91VRvW/7W9KU6ZIT+MwL+XXnAmbFdeWj94jKTREA/7m89IaAAaqZLBGRoFbRFQAHUTJfXEPDBzO6Ob1D3ZvYxOMDM2IJdjtcsM8m1m/B5xo2ZPZrZ9wCKzNgC3Y3ZJDrJzCHrcqZTGV4JfxpI3sXdUUTAFvjOeC7jZ6ASdi+hJWAr/CUBvhz5ibe1J+xawpKAHvCXBPjPfD94CKzOu5UwJ6AX/JYAv1vyO6bIZ5cSpgRkoETALVWZL0N/I50c2/gF3a5+vYmAhP2KpixBFVQTfbIJJ2BVNFW/hr6a2e17PpC1BDibrW9EHMQWnrCIgK0SuIroIMC76HUZ5wevH4H1NPpwBLoat0lmkmsF+HW0Xzf4+cKXs9aaf6KVGdu4hBsjy0xyrYC1cDJjW5sh/15mkggo0IWAAqiZLhGQoVXQFgEFUDNdZgT4LeSnTOcb2r5c8c8gNwxz+1czAlppmRPzLu/2W4Cmft5TQPTEDPwzE70FtCQA/6IMKgTMSQD+xBpUJeBSAvBnNohKAR7Jv6l2vAtas8nzHQSM/QxUL0Fjz36A0SFALAEBCBATEMdTAQgQExDHUwEIEBMQx1MBCBATEMdTAQgQExDHUwEIEBMQx1MBCBATEMdTAQgQExDHUwEIEBMQx1MBCBATEMdTAQgQExDHUwEIEBMQx1MBCBATEMdTAQgQExDHUwEIEBMQx1MBCBATEMdTAQgQExDHUwEIEBMQx1MBCBATEMdTAQgQExDHUwEIEBMQx1MBCBATEMdTAQgQExDHUwEIEBMQx/8HtCJQYbi6JKcAAAAASUVORK5CYII="/><br> <h1>Mode ne pas déranger bientôt disponible!</h1></a>-->
-        </header><!-- End Header -->
    
-
-   
-    <!-- ======= Projets Section ======= -->
-    <section id="services" class="services">
-      <div class="container">
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services section-bg">
+      <div class="container" data-aos="fade-up">
 
         <div class="section-title">
-          <h2>Projets</h2>
-          <p>Voici mes projets. Il n'y en a pas beaucoup pour l'instant mais j'espère que ça se remplira au fur et à mesure 🤞🏼 </p>
+          <h2>Page d'aide</h2>
+          <p>Ici vous trouverez toutes les commandes de Elbot. (le prefix est "e!")                       [mise à jour: 23/08/2021 20h33]</p>
+        </div>
+<div><b>COMMANDE ÉCRITE</b></div>
+      
+<div class="row">
+
+  <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="20">
+    <div class="icon-box iconbox-blue">
+      <h4>pessi</h4></a>
+      <p><b>Description : </b>Pour connaitre tous les mots de pessis<br><b>Permission : </b>Envoyer un message<br><b>WARN : </b>Aucun <b><br>Code:</b> JS</p>
+    </div>
+  </div>
+
+  <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="20">
+    <div class="icon-box iconbox-blue">
+      <h4>say</h4>
+      <p><b>Description : </b>Pour me faire dire tout et n'importe quoi<br><b>Permission : </b>Gérer les messages<br><b>WARN : </b>Vous ne pouvez pas mentionner @here/@everyone</b> <b><br>Code:</b> JS</p>
+    </div>
+  </div>
+  <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="20">
+    <div class="icon-box iconbox-blue">
+      <h4>chinese</h4>
+      <p><b>Description : </b>Pour me faire dire tout et n'importe quoi mais où les caractères sont transformer en caractères chinois.<br><b>Permission : </b>Gérer les messages<br><b>WARN : </b>Vous ne pouvez pas mentionner @here/@everyone</b> <br> <b> Exepmle: </b> e!chinesse Bonjour Elbot répond: <br>书口冂丿口凵尺<br>Code:</b> Python</p>
+    </div>
+  </div>
+  <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="20">
+    <div class="icon-box iconbox-blue">
+      <h4>uno</h4>
+      <p><b>Description : </b>Pour avoir la carte changement de sens<br><b>Permission : </b>Envoyer une image et un message.<br><b>WARN : </b>Aucun</b> <b><br>Code:</b> JS</p>
+    </div>
+  </div>
+
+  <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="20">
+    <div class="icon-box iconbox-blue">
+      <h4>sondage</h4>
+      <p><b>Description : </b>Crée un sondage avec les choix "oui" et "non" grâce aux réactions.<br><b>Permission : </b>Envoyer un message et des réactions<br><b>WARN : </b>Aucun</b> <b><br>Code:</b> JS</p>
+    </div>
+  </div>
+
+  <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="20">
+    <div class="icon-box iconbox-blue">
+      <h4>test</h4>
+      <p><b>Description : </b>Pour savoir si je fonctionne et lequel des codes fonctionnent.<br><b>Permission : </b>Envoyer un message<br><b>WARN : </b>Aucun</b> <b><br>Code:</b> JS</p>
+    </div>
+  </div>
+
+  <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="20">
+    <div class="icon-box iconbox-blue">
+      <h4>infoserver</h4>
+      <p><b>Description : </b>Pour connaitre les informations importantes sur ce serveur<br><b>Permission : </b>Envoyer un message embed<br><b>WARN: </b>Aucun</b> <b><br>Code:</b> JS</p>
+    </div>
+  </div>
+
+  <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="20">
+    <div class="icon-box iconbox-blue">
+      <h4>restart</h4>
+      <p><b>Description : </b>Redémarre / déconnecte et reconnecte le robot de Discord.<br><b>Permission : </b>Créateur<br><b>WARN : </b>Aucun</b> <b><br>Code:</b> JS</p>
+    </div>
+  </div>
+
+  <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="20">
+    <div class="icon-box iconbox-blue">
+      <h4>number</h4>
+      <p><b>Description : </b>Pour avoir un nombre au hasard entre 1 et 100.<br><b>Permission : </b>Envoyer un message<br><b>WARN : </b>Aucun</b> <b><br>Code:</b> JS</p>
+    </div>
+  </div>
+
+  <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="20">
+    <div class="icon-box iconbox-blue">
+      <h4>heberger</h4>
+      <p><b>Description : </b> Pour savoir sur quel hébergeur je suis héberger en ce moment!<br><b>Permission : </b>Envoyer un message<br><b>WARN : </b>Peut ne pas être à jour automatiquement</b>Aucun <b><br>Code:</b> JS et Python</p>
+    </div>
+  </div>
+
+  <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="20">
+    <div class="icon-box iconbox-blue">
+      <h4>ping</h4>
+      <p><b>Description : </b>Affiche le temps de latence du bot en ms.<br><b>Permission : </b>Envoyer un message<br><b>WARN : </b>Aucun</b> <b><br>Code:</b> JS</p>
+    </div>
+  </div>
+
+  <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="20">
+    <div class="icon-box iconbox-blue">
+      <h4>clear</h4>
+      <p><b>Description : </b>Pour clear le nombre de message que vous souhaitiez <br><b>Permission : </b>Gérer les messages<br><b>WARN : </b>Max: 100</b> <b><br>Code:</b> JS</p>
+    </div>
+  </div>
+
+
+  
+  <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="20">
+    <div class="icon-box iconbox-blue">
+      <h4>invite</h4>
+      <p><b>Description : </b>Donne un lien d'invitation pour inviter le bot sur votre serveur.<br><b>Permission : </b>Aucune<br><b>Lieu : </b>MP / Textuel</b> <b><br>Code:</b> JS</p>
+    </div>
+  </div>
+
+  <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="20">
+    <div class="icon-box iconbox-blue">
+      <h4>github</h4>
+      <p><b>Description : </b>Pour afficher le code github<br><b>Permission : </b>Envoyer un message<br><b>WARN : </b>Il est disponible sur ce site. Et le repo n'est pas mis à jour manuellement</b> <b><br>Code:</b> JS</p>
+    </div>
+  </div>
+  <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="20">
+    <div class="icon-box iconbox-blue">
+      <h4>funfact</h4>
+      <p><b>Description : </b>Pour connaitre une anecdote sur Elbot.<br><b>Permission : </b>Envoyer un message<br><b>WARN : </b>Aucun <b><br>Code: </b> Python</p>
+    </div>
+  </div>
+  <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="20">
+    <div class="icon-box iconbox-blue">
+      <h4>kick</h4>
+      <p><b>Description : </b>Pour expulser un membre sur un serveur.<br><b>Permission : </b>Expulser un membre<br><b>WARN : </b>Aucun <b><br>Code: </b> Python</p>
+    </div>
+  </div>
+  <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="20">
+    <div class="icon-box iconbox-blue">
+      <h4>ban</h4>
+      <p><b>Description : </b>Pour débannir un membre sur un serveur<br><b>Permission : </b>Bannir un membre<br><b>Code: </b> Python</p>
+    </div>
+  </div>
+  <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="20">
+    <div class="icon-box iconbox-blue">
+      <h4>unban</h4>
+      <p><b>Description : </b>Pour débannir un membre sur un serveur<br><b>Permission : </b>Bannir un membre<br><b>Exemple : </b>e!unban el2zay#1234 <b><br>Code: </b> Python</p>
+    </div>
+  </div>
+  <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="20">
+    <div class="icon-box iconbox-blue">
+      <h4>roulette</h4>
+      <p><b>Description : </b>Pour tirer au hasard qui gagnera des participants un ban ou kick ou rôle personnalisé un mute ou un gage.<br><b>Permission : </b>Envoyer un message<br><b>WARN : </b>Aucun <b><br>Code: </b> Python</p>
+    </div>
+  </div>
+
+
+
+
+  
+  <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="20">
+    <div class="icon-box iconbox-blue">
+      <h4>D'autres commandes...</h4>
+      <p>Une idée de commande ? Envoyez un message sur un de mes réseaux sociaux que vous trouverez sur la  <a href="https://el2zay.is-a.dev">page principale</a> Vous pouvez regarder aussi les prochaines commandes de Elbot.</b> </p>
+    </div>
+  </div>
+  <div><b>COMMANDE MUSIQUE</b></div>
+  <div class="row">
+
+    <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="20">
+      <div class="icon-box iconbox-blue">
+        <h4>play</h4></a>
+        <p><b>Description : </b>Joue de la musique grâce à un lien youtube<br><b>Permission : </b>Se connecter à un salon vocal et parler.<br><b>Exemple : </b>e!play https://www.https//www.youtube.com/watch?v=n3UBSa7-H0U pour diffuser la musique Petrouchka dans un salon</b>Aucun <b><br>Code:</b> JS</p>
+      </div>
+    </div>
+  
+    <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="20">
+      <div class="icon-box iconbox-blue">
+        <h4>stop</h4>
+        <p><b>Description : </b>Arrête la musique.<br><b>Permission : </b>Se connecter à un salon vocal et parler.<br><b>WARN : </b>Vous devez être dans le même salon que elbot pour arrêter la musique.</b>Aucun <b><br>Code:</b> JS </p>
+      </div>
+    </div>
+  
+    <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="20">
+      <div class="icon-box iconbox-blue">
+        <h4>brique</h4>
+        <p><b>Description : </b>Pour que elbot chante tutititutu<br><b>Permission : </b>Se connecter à un salon vocal et parler.<br><b>WARN : </b>Disponible uniquement dans le salon #817012298057121852</b>Aucun<br><b>Code:</b> JS <b></p>
+      </div>
+    </div>
+  
+
+    </section><!-- End Features Section -->
+
+   
+    <!-- ======= Features Section ======= -->
+    <section id="features" class="features">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Prochainement</h2>
+          <p>Ici vous trouverez les prochaines commandes prévues.</p>
         </div>
 
         <div class="row">
-          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up">
-            <div class="icon"><i class="bx bx-bot"></i></div>
-            <h4 class="title"><a href="https://el2zay.is-a.dev/elbot">Elbot</a></h4>
-            <p class="description">Elbot est un bot discord français qui est open source, et dont le code est disponible sur Github. <br> Il est codé en JavaScript. <br> <i>Cliquez sur le titre pour plus d'informations. </i>  </p>
+          <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column align-items-lg-center">
+            <div class="icon-box mt-5 mt-lg-0" data-aos="fade-up" data-aos-delay="100">
+              <h4>loop</h4>
+              <p>Une commande loop qui servira à répeter un boucle une musique</p>
+            </div>
+            <div class="icon-box mt-5" data-aos="fade-up" data-aos-delay="200">
+              <h4>ytb</h4>
+              <p>Cette commande permettera de regarder une vidéo Youtube</p>
+            </div>
+            <div class="icon-box mt-5" data-aos="fade-up" data-aos-delay="300">
+              <h4>sticksay</h4>
+              <p>Une commande qui permettera de faire parler un stickman (homme baton).</p>
+            </div>
+            <div class="icon-box mt-5" data-aos="fade-up" data-aos-delay="300">
+              <h4>userinfo</h4>
+              <p>Une commande qui permettera de connaitre les informations sur un utilisateur</p>
+            </div>
+            
           </div>
-          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="100">
-            <div class="icon"><i class='bx bx-alarm' ></i></div>
-            <h4 class="title"><a href="https://el2zay.is-a.dev/erreur">Reveilleur de bot</a></h4>
-            <p class="description">Reveilleur de bot est un bot qui sert à réveiller des bots qui sont héberger sur des hébergeurs gratuit tel que Glitch. <br> <i>Cliquez sur le titre pour plus d'informations. <i> </p>
-          
-    </section><!-- End Projets Section -->
+        </div>
+
+      </div>
+    </section><!-- End Features Section -->
+           
+           
+
+
 
    
 
-   
+  
+
+    
+
   </main><!-- End #main -->
 
   <!-- ======= Footer ======= -->
   <footer id="footer">
-    <div class="container">
-      <h3>Elie Z</h3>
-      <p>Merci de votre visite sur mon site.</p>
-      <div class="social-links">
-        <a href="https://instagram.com/el2zay" class="instagram"><i class="bx bxl-instagram"></i></a>
-        <a href="https://twitter.com/el2zay" class="twitter"><i class="bx bxl-twitter"></i></a>
-        <a href="https://www.github.com/Elie404" class="github"><i class="bx bxl-github"></i></a>
-        <a href="https://www.youtube.com/channel/UCZHprEd5P935nlVoFR_kqew" class="youtube"><i class="bx bxl-youtube"></i></a>
-        <a href="https://dsc.bio/el2zay" class="discord"><i class="bx bxl-discord"></i></a>
-        <a href="mailto:el2zay.contact@gmail.com" class="contact"><i class='bx bx-envelope'></i></i></a>
-      </div>
-      <div class="copyright">
-        &copy; Copyright <strong><span>MyResume</span></strong>. All Rights Reserved
-      </div>
-      <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you purchased the pro version. -->
-        <!-- Licensing information: [license-url] -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/free-html-bootstrap-template-my-resume/ -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-      </div>
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h3>ΞLIΞ</h3>
+            <p>
+              <strong>Email:</strong> el2zay.contact@gmail.com<br>
+            </p>
+          </div>
+          <div class="copyright-wrap d-md-flex py-4">
+            <div class="me-md-auto text-center text-md-start">
+              <div class="copyright">
+                &copy; Copyright <strong><span>Techie</span></strong>. All Rights Reserved
+              </div>
+              <div class="credits">
+                <!-- All the links in the footer should remain intact. -->
+                <!-- You can delete the links only if you purchased the pro version. -->
+                <!-- Licensing information: https://bootstrapmade.com/license/ -->
+                <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/techie-free-skin-bootstrap-3/ -->
+                Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+              </div>
+            </div>
+
+          
+
     </div>
   </footer><!-- End Footer -->
 
-  <div id="preloader"></div>
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <div id="preloader"></div>
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/aos/aos.js"></script>
@@ -203,8 +376,6 @@
   <script src="assets/vendor/php-email-form/validate.js"></script>
   <script src="assets/vendor/purecounter/purecounter.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/typed.js/typed.min.js"></script>
-  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
