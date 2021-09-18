@@ -82,21 +82,27 @@
           if(/Apple/i.test(navigator.userAgent)){
               document.getElementById("Detector").innerHTML += "<h3>Apple device detecté</h3>";
           }
-          else{
-              document.getElementById("Detector").innerHTML += "<h3>Apple device non detecté</h3>";
-          }
-      </script>
 
 
 
-<script>
   function showExplication() {
       document.getElementById("Detector").innerHTML += 
         "<h3>Apple device detecté</h3>";
                       document.getElementById("showExplication").disabled = true;
   }
-  
+
 </script>
+
+<script>          
+  if(/Android|Windows|Linux/i.test(navigator.userAgent)){
+  document.getElementById("Detector1").innerHTML += "<h3>Apple device non detecté</h3>";
+
+  function showExplication() {
+      document.getElementById("Detector1").innerHTML += 
+        "<h3>Apple device non detecté</h3>";
+                      document.getElementById("showExplication").disabled = true;
+  }
+}</script>
 </div>
 
 
