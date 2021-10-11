@@ -2312,7 +2312,7 @@ section {
   text-align: center;
   padding: 70px 20px 80px 20px;
   transition: all ease-in-out 0.3s;
-  background: #000;
+  background: whitesmoke;
 }
 
 .services .icon-box .icon {
