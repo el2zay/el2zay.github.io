@@ -262,3 +262,15 @@
   });
 
 })()
+
+/**
+ * detector
+
+Apple Device
+*/
+
+if(/Apple/i.test(navigator.userAgent)){
+  document.write("apple device");
+}else{
+  document.write("not mobile");
+}
