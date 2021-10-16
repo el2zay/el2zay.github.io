@@ -1,19 +1,46 @@
-h1
-{
-color: red;
-}
+h1 {
+    font-family: "Mansalva";
+    font-size: 90px;
+    text-align: center;
+    color: rgba(0, 246, 219);
+  }
 
-body
-{
-background-color: rgb(18, 98, 207)
-}
+  h2 {
+    font-family: "Kollektif";
+    font-size: 20px;
+    text-align: center;
+    color: rgba(0, 246, 219);
+;
+  }
 
-#carte
-{
- 
- width: 800px;
- margin:0 auto;
- background-color: rgb(18, 97, 207);
- text-align: center;
- align-content: center;
+  h3 {
+    font-family: "Kollektif";
+    font-size: 17px;
+    text-align: center;
+    color: rgba(0, 246, 219);
+  }
+
+  h4 {
+    text-align: center;
+    color: white;
+  }
+
+  body {
+    width: 100%;
+    height: 100vh;
+    background: url("https://cdn.discordapp.com/attachments/794895791248244746/890191175213019146/Erreur_404_-_Elie_Concept2.png") top right no-repeat;
+    background-size: cover;
+    position: relative;
+}
+img {
+  position: absolute;
+  left: 180;
+  top: -90px;
+  z-index: -1;
+}
+  a {
+    font-family: "Kollektif";
+    font-size: 17px;
+    text-align: center;
+    color: rgba(0, 246, 219); 
 }
