@@ -3,6 +3,11 @@ h1 {
     font-size: 90px;
     text-align: center;
     color: rgba(0, 246, 219);
+    position: fixed;
+    right: 400;
+    bottom: 435;
+    z-index: 598;
+    border-radius: 50px;
   }
 
   h2 {
@@ -10,24 +15,46 @@ h1 {
     font-size: 20px;
     text-align: center;
     color: rgba(0, 246, 219);
-;
+    position: fixed;
+    right: 350;
+    bottom: 350;
+    z-index: 598;
+    border-radius: 50px;
   }
+
 
   h3 {
     font-family: "Kollektif";
     font-size: 17px;
     text-align: center;
     color: rgba(0, 246, 219);
+    position: fixed;
+    right: 300;
+    bottom: 15px;
+    z-index: 598;
+    border-radius: 50px;
   }
 
   h4 {
+    font-family: "Kollektif";
+    font-size: 17px;
     text-align: center;
-    color: white;
+    color: rgb(255, 255, 255);
+    position: fixed;
+    right: 520;
+    bottom: -15px;
+    z-index: 598;
+    border-radius: 50px;
   }
 
   h5 {
     font-family: "Arial";
-    color:rgb(246, 0, 0)
+    color:rgb(246, 0, 0);
+    position: fixed;
+    left: 0;
+    bottom: -15px;
+    z-index: 598;
+    border-radius: 50px;
   }
 
   body {
