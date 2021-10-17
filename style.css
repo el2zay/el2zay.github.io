@@ -1,5 +1,3 @@
-@import url('http://fonts.cdnfonts.com/css/kollektif');
-
 h1 {
     font-family: "Mansalva";
     font-size: 90px;
@@ -25,6 +23,11 @@ h1 {
   h4 {
     text-align: center;
     color: white;
+  }
+
+  h5 {
+    font-family: "Arial";
+    color:rgb(246, 0, 0)
   }
 
   body {
