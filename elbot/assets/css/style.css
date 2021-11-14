@@ -33,7 +33,7 @@ h8 {
   color:limegreen
 
 }
-h9 {
+h10 {
   font-family: "Poppins", sans-serif;
   color:red
 
@@ -1661,7 +1661,7 @@ section {
 
 body {
   font-family: "Open Sans", sans-serif;
-  color: #444444;
+  color: black;
 }
 
 a {
@@ -1682,13 +1682,11 @@ h8 {
   color:limegreen
 
 }
-}
-h9 {
+h10 {
   font-family: "Poppins", sans-serif;
   color:red
 
 }
-
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
@@ -2332,7 +2330,6 @@ section {
   text-align: center;
   padding: 70px 20px 80px 20px;
   transition: all ease-in-out 0.3s;
-  background: whitesmoke;
 }
 
 .services .icon-box .icon {
@@ -3305,4 +3302,4 @@ section {
   color: #fff;
   text-decoration: none;
 }
-
+}
