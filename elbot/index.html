@@ -109,9 +109,10 @@
             <ul>
               <li><i class="bi bi-check-circle"></i> En ligne 7j/7 24h/24</li>
               <li><i class="bi bi-check-circle"></i> Gratuit et Open Source</li>
-              <li><i class="bi bi-check-circle"></i> Codé en Python</li>
+              <li><i class="bi bi-check-circle"></i> Codé 100% en Python</li>
               <li><i class="bi bi-check-circle"></i>Musique</li>
               <li><i class="bi bi-check-circle"></i>Surveillé par Watchbot</li>
+              <li><i class="bi bi-check-circle"></i>Database</li>
             </ul>
           </div>
         </div>
@@ -126,7 +127,7 @@
 
         <div class="section-title">
           <h2>Page d'aide</h2>
-          <p>Ici vous trouverez toutes les commandes de Elbot. (le prefix est "e!") [mise à jour: 16/11/2021 19h16]<br> <h8>43 commandes fonctionnelles et publiques.</h8></p>
+          <p>Ici vous trouverez toutes les commandes de Elbot. (le prefix est "e!") [mise à jour: 22/12/2021 10h32]<br> <h8>45 commandes fonctionnelles et publiques.</h8></p>
         </div>
 <div><b>COMMANDES ÉCRITES</b></div>
       
@@ -134,28 +135,21 @@
 
   <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="20">
     <div class="icon-box iconbox-blue">
-      <h4>pessi</h4></a>
-      <p><b>Description : </b>Pour connaitre tous les mots de pessis<br><b>Permission : </b>Envoyer un message<br><b>WARN : </b>Aucun</p>
-    </div>
-  </div>
-
-  <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="20">
-    <div class="icon-box iconbox-blue">
-      <h4>say</h4>
+      <h4>say &lt;texte&gt;</h4>
       <p><b>Description : </b>Pour me faire dire tout et n'importe quoi<br><b>Permission : </b>Gérer les messages<br><b>WARN : </b>Vous ne pouvez pas mentionner @here/@everyone</b></p>
     </div>
   </div>
 
   <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="20">
     <div class="icon-box iconbox-blue">
-      <h4>chinese</h4>
+      <h4>chinese &lt;texte&gt;</h4>
       <p><b>Description : </b>Pour me faire dire tout et n'importe quoi mais où les caractères sont transformés en caractères chinois.<br><b>Permission : </b>Gérer les messages<br><b>WARN : </b>Vous ne pouvez pas mentionner @here/@everyone</b> <br> <b> Exepmle: </b> e!chinesse Bonjour Elbot répond: <br>书口冂丿口凵尺</p>
     </div>
   </div>
 
   <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="20">
     <div class="icon-box iconbox-blue">
-      <h4>embed</h4>
+      <h4>embed &lt;titre&gt;§&lt;description&gt;§<br>&lt;footer&gt;§&lt;couleur&gt;</h4>
       <p><b>Description : </b>Créer un embed à partir de elbot <h10><b>VERSION BETA </b></h10><br><b>Permission : </b>Envoyer un embed<br><b>WARN : </b>La séparation est § <b> <br>Exemple: </b>e!embed Ça c'est le titre§ça c'est la description§ça c'est le footer§et là, la couleur. (voir commande list_color)</p>
     </div>
   </div>
@@ -169,21 +163,21 @@
 
   <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="20">
     <div class="icon-box iconbox-blue">
-      <h4>contact</h4>
+      <h4>contact &lt;texte&gt;</h4>
       <p><b>Description : </b>Pour contacter el2zay via le bot<br><b>Permission : </b>Envoyer un message<br><b>WARN :</b> Aucun</p>
     </div>
   </div>
 
     <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="20">
       <div class="icon-box iconbox-blue">
-        <h4>count</h4>
+        <h4>count &lt;texte&gt;</h4>
         <p><b>Description : </b>Compter le nombre de caractères dans un mot ou une phrase.<br><b>Permission : </b>Envoyer un message<br><b>WARN : Aucun</b></p> </div>
       </div>
 
 
   <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="20">
     <div class="icon-box iconbox-blue">
-      <h4>sondage</h4>
+      <h4>sondage &lt;texte&gt;</h4><h11>(argument facultatif)</h11>
       <p><b>Description : </b>Créer un sondage avec les choix "oui" et "non" grâce aux réactions.<br><b>Permission : </b>Envoyer un message et des réactions<br><b>WARN : </b>Aucun.</b></p>
     </div>
   </div>
@@ -204,14 +198,29 @@
 
   <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="20">
     <div class="icon-box iconbox-blue">
-      <h4>infouser</h4>
+      <h4>infouser &lt;user&gt;</h4><h11>(argument facultatif)</h11>
       <p><b>Description : </b>Pour connaitre les informations sur un utilisateur<br><b>Permission : </b>Envoyer un message embed<br><b>WARN: </b>Aucun</b></p>
     </div>
   </div>
 
   <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="20">
     <div class="icon-box iconbox-blue">
-      <h4>avatar</h4>
+      <h4>set_birthday / add_birthday <br> &lt;JJ mois AAAA&gt;</h4>
+      <p><b>Description : </b>Ajouter ou modifier la date de son anniversaire.<br><b>Permission : </b>Envoyer un message.<br><b>WARN: </b>Votre anniversaire est affiché sur tous les serveurs où vous êtes et où est Elbot. Pas besoin de mettre plein de fois son anniversaire sur plein de serveurs.<br>C'est cool hein :S</b></p>
+    </div>
+  </div>
+
+  <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="20">
+    <div class="icon-box iconbox-blue">
+      <h4>birthday &lt;membre&gt;</h4> <h11>(argument facultatif)</h11>
+      <p><b>Description : </b>Voir la liste des anniversaires. Vous pouvez aussi voir la liste d'un seul membre en le mentionnant.<br><b>Permission : </b>Envoyer un message.<br><b>WARN: </b>Votre anniversaire est affiché sur tous les serveurs où vous êtes et où est Elbot. Pas besoin de mettre plein de fois son anniversaire sur plein de serveurs.<br>C'est cool hein :S</b></p>
+    </div>
+  </div>
+
+
+  <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="20">
+    <div class="icon-box iconbox-blue">
+      <h4>avatar &lt;membre&gt;</h4>
       <p><b>Description : </b>Pour avoir l'avatar d'un utilisateur<br><b>Permission : </b>Envoyer un message embed<br><b>WARN: </b>Aucun</b></p>
     </div>
   </div>
@@ -239,12 +248,16 @@
 
   <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="20">
     <div class="icon-box iconbox-blue">
-      <h4>clear</h4>
+      <h4>clear &lt;nombre&gt;</h4>
       <p><b>Description : </b>Pour clear le nombre de message que vous souhaitiez <br><b>Permission : </b>Gérer les messages<br><b>WARN : </b>Aucun</b>
     </div>
   </div>
-
-
+  <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="20">
+    <div class="icon-box iconbox-blue">
+      <h4>pessi</h4></a>
+      <p><b>Description : </b>Pour connaitre tous les mots de pessis<br><b>Permission : </b>Envoyer un message<br><b>WARN : </b>Aucun</p>
+    </div>
+  </div>
   
   <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="20">
     <div class="icon-box iconbox-blue">
@@ -266,26 +279,20 @@
     </div>
   </div>
   <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="20">
-  <div class="icon-box iconbox-blue">
-    <h4>calc</h4>
-    <p><b>Description : </b>Pour calculer...<br><b>Permission : </b>Envoyer un message<br><b>WARN : </b>Seulement 2 nombres calculable.<br>Les "," sont des "."
-  </div>
-</div>
-  <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="20">
     <div class="icon-box iconbox-blue">
-      <h4>kick</h4>
+      <h4>kick &lt;membre&gt;</h4>
       <p><b>Description : </b>Pour expulser un membre sur un serveur.<br><b>Permission : </b>Expulser un membre<br><b>WARN : </b>Aucun 
     </div>
   </div>
   <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="20">
     <div class="icon-box iconbox-blue">
-      <h4>ban</h4>
+      <h4>ban &lt;membre&gt;</h4>
       <p><b>Description : </b>Pour bannir un membre sur un serveur<br><b>Permission : </b>Bannir un membre
     </div>
   </div>
   <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="20">
     <div class="icon-box iconbox-blue">
-      <h4>unban</h4>
+      <h4>unban &lt;membre&gt;</h4>
       <p><b>Description : </b>Pour débannir un membre sur un serveur<br><b>Permission : </b>Bannir un membre<br><b>Exemple : </b>e!unban el2zay#1234
     </div>
 
@@ -308,14 +315,14 @@
 
   <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="20">
     <div class="icon-box iconbox-blue">
-      <h4>mute</h4>
+      <h4>mute &lt;membre&gt;</h4>
       <p><b>Description : </b>Pour muter un membre du serveur.<br><b>Permission : Gérer les messages.</b>.<br><b>WARN : </b>Aucun </p>
     </div>
   </div>
 
   <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="20">
     <div class="icon-box iconbox-blue">
-      <h4>unmute</h4>
+      <h4>unmute &lt;membre&gt;</h4>
       <p><b>Description : </b>Pour unmute un membre du serveur.<br><b>Permission : Gérer les messages.</b>.<br><b>WARN : </b>Aucun </p>
     </div>
   </div>
@@ -335,18 +342,17 @@
   </div>
   <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="20">
     <div class="icon-box iconbox-blue">
-      <h4>timer/minuteur</h4>
+      <h4>timer/minuteur &lt;secondes&gt;</h4><h10><b>VERSION BETA </b></h10>
       <p><b>Description : </b>Pour lancer un minuteur à la fin de ce minuteur vous serez averti par MP<br><b>Permission </b>: Envoyer un message</b>.<br><b>WARN : </b>Secondes uniquement pour l'instant</p>
     </div>
   </div>
 
   <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="20">
     <div class="icon-box iconbox-blue">
-      <h4>removebg</h4>
+      <h4>removebg &lt;lien&gt;</h4>
       <p><b>Description : </b><br>Enlever l'arrière plan d'un image.<br><b>Permission :</b> Envoyer un lien, Envoyer une image</b>.<br><b>WARN : </b>Un lien est requis. <br>Powered by removebg</p>
     </div>
   </div>
-
 
   <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="20">
     <div class="icon-box iconbox-blue">
@@ -371,20 +377,20 @@
 
   <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="20">
     <div class="icon-box iconbox-blue">
-      <h4>cuisiner</h4>
+      <h4>cuisiner &lt;texte&gt;</h4>
       <p><b>Description : </b>Faire un plat<br><b>Permission : </b>Envoyer des messages.<br><b>Exemple : </b>e!cuisine pâtes </p>
     </div>
   </div>
 
   <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="20">
     <div class="icon-box iconbox-blue">
-      <h4>pfc</h4>
+      <h4>pfc &lt;texte&gt;</h4>
       <p><b>Description : </b>Faire un pierre feuille ciseaux<br><b>Permission : </b>Envoyer des messages.<br><b>Exemple : </b>e!pfc pierre </p>
     </div>
   </div>
   <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="20">
     <div class="icon-box iconbox-blue">
-      <h4>qi</h4>
+      <h4>qi &lt;membre&gt;</h4><h11>(argument facultatif)</h11>
       <p><b>Description : </b>Connaitre son QI ou celui d'un autre membre/bot du serveur.<br><b>Permission : </b>Envoyer des messages.<br><b>WARN:</b> Aucun </p>
     </div>
   </div>
@@ -399,7 +405,7 @@
 
   <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="20">
     <div class="icon-box iconbox-blue">
-      <h4>dm</h4>
+      <h4>dm &lt;ID&gt;</h4>
       <p><b>Description : </b>Pour me faire dire tout et n'importe quoi en mp a des personnes grâce à leurs ID's<br><b>WARN : </b>Il est obligatoire de mettre l'ID d'une personne et pas sa mention. <br><b>Exemple:</b>e!dm 727572859727380531 tu es un magnifique Nyan Cat<br><b>IMPORTANT: </b>Si vous subissez un harcélement ou que vous souhaitiez juste que personne ne vous MP sous l'identité de elbot MP el2zay sur un de ses réseaux pour qu'il ne soit plus possible à quiconque de vous MP sous l'identité de elbot.</p>
     </div>
   </div>
@@ -415,7 +421,7 @@
 
     <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="20">
       <div class="icon-box iconbox-blue">
-        <h4>play</h4></a>
+        <h4>play &lt;lien&gt;</h4></a>
         <p><b>Description : </b>Joue de la musique grâce à un lien youtube<br><b>Permission : </b>Se connecter à un salon vocal et parler.<br><b>Exemple : </b>e!play https://www.https//www.youtube.com/watch?v=n3UBSa7-H0U pour diffuser la musique Petrouchka dans un salon</b>
       </div>
     </div>
@@ -451,8 +457,8 @@
   
     <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="20">
       <div class="icon-box iconbox-blue">
-        <h4>brique</h4>
-        <p><b>Description : </b>Pour que elbot chante tutititutu<br><b>Permission : </b>Se connecter à un salon vocal et parler.<br><b>WARN : </b>Disponible uniquement dans le salon #817012298057121852</b>Aucun
+        <h4>brique</h4> <h10><b>Commande non fonctionnelle pour l'instant</b></h10>
+        <p><b>Description : </b>Pour que elbot chante tutititutu<br><b>Permission : </b>Se connecter à un salon vocal et parler.<br><b>WARN : </b>Aucun
       </div>
     </div>
   
@@ -509,7 +515,7 @@
         <div class="row">
 
           <div class="col-lg-3 col-md-6 footer-contact">
-            <h3>ΞLIΞ</h3>
+            <h3>ΞLIΞ</h3> 
             <p>
               <strong>Email:</strong> el2zay.contact@gmail.com<br>
             </p>
