@@ -27,6 +27,89 @@
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 
+  <!-- Script pour changer de page -->
+  <script>
+    var currentPage = 1
+    window.onload = function (){
+    changePage(1)
+    }
+    function changePage(page){
+      // Obtenir quelques éléments
+      var firstTitle = document.getElementById("maj_firstTitle");
+      var firstP = document.getElementById("maj_firstP");
+      var secondTitle = document.getElementById("maj_secondTitle");
+      var secondP = document.getElementById("maj_secondP");
+      var thirdTitle = document.getElementById("maj_thirdTitle");
+      var thirdP = document.getElementById("maj_thirdP");
+      
+      // Si la page est la première
+      if(page === 1) document.getElementById("maj_btn_nextPage").classList.remove("disabled");
+      if(page === 1) document.getElementById("maj_btn_previousPage").classList.add("disabled");
+      
+      // Si la page est la dernière
+      if(page === 2) document.getElementById("maj_btn_nextPage").classList.add("disabled");
+      if(page === 2) document.getElementById("maj_btn_previousPage").classList.remove("disabled");
+      
+      // Changer les éléments
+        // Page numéro 1
+        if(page === 1){
+          firstTitle.innerText = 'v3.1.1 21 décembre 2021'
+          firstP.innerHTML = `<b>--- Nouveautés ---</b><br>-Commande birthday :<br>• Nouvelles erreurs lorsque vous saisissez un date invalide<br>• Date d'anniversaire affiché sur tous les serveurs où vous êtes. Plus besoin de le remettre sur chaque serveur<br>• LowerCase pour pouvoir écrit son mois de naissance comme vous le souhaitez.<br><br><b>--- Correction ---</b><br>• Les réactions ont été corrigé suite à la suppression du serveur discord "Ubuntu le best"`
+          
+          secondTitle.innerText = 'v3.1.0 20 décembre 2021'
+          secondP.innerHTML = `------ Nouveautés ---------
+                            <br>COMPATIBLE AVEC SUPABASE:
+                            <br>• Commande birthday (stable)
+                            <br><br>------ Erreur ------------
+                            <br>• Ajout d'un embed pour les erreurs
+                            <br>------ Corrections ------------
+                            <br>• e!contact : Je sais désormais qui envoie le message et d'où
+                            <br>• e!close : Plus possible de fermer n'importe quelle salon sur le serveur elwatch
+                            <br>• e!ticket : Envoie d'un message dans le ticket créé si le ticket est de type 1`
+          
+         thirdTitle.innerText = 'v3.0.3 15 novembre 2021'
+          thirdP.innerHTML = `<b>------ Nouveautés ---------</b>
+                              <br>Amélioration du code.
+                              <br>Nouvelles commandes embed
+                              <br>Nouvelle commande list_color
+                              <br>Nouvelle commande qi
+                              <br><br><b>------ Corrections et améliorations---------</b>
+                              <br>Correction de l'event listen messages
+                              <br>Réponse kick amélioré`
+          
+        }
+        // Page numéro 2
+        if(page === 2){
+          firstTitle.innerText = 'v3.0.0 6 novembre 2021'
+          firstP.innerHTML = `<b>--- Nouveautés ---</b>
+                              <br>Suppression de quelques lignes inutiles.
+                              <br>Suppression du code JS passage du bot en full Python (passage à la v3).
+                              <br>Nouvelle commande pfc
+                              <br>Vous envoie un mp lorsque vous avez été bannis d'un serveur avec la commande ban.
+                              `
+            secondTitle.innerText = 'v2.1.2 14 octobre 2021'
+            secondP.innerHTML = `<b>--- Nouveautés ---</b>
+                                <br>- Aliase serverinfo, serverinfo2/
+                                <br>- Commande userinfo
+                                <br>- Commande lock
+                                <br>- Commande unlock
+                                <br>- Commande cuisiner
+                                <br>- Commande mute
+                                <br>- Commande unmute
+                                <br>- Les boutons sont désormais disponible pour de futur commandes
+                                <br>- Commande slash infoserver et  infoserver2`
+
+            thirdTitle.innerText = 'v2.1.1 24 septembre 2021'
+            thirdP.innerHTML = `<b>--- Nouveautés ---</b>
+                                <br>- Reconstruction du code
+                                <br>- Compatible djs v13`}
+
+      // Modifier la variable contenant la page affiché
+      currentPage = page
+    }
+
+
+  </script>
   <!-- =======================================================
   * Template Name: Techie - v4.3.0
   * Template URL: https://bootstrapmade.com/techie-free-skin-bootstrap-3/
@@ -48,7 +131,8 @@
         <ul>
           <li><a class="nav-link scrollto active" href="#hero">Accueil</a></li>
           <li><a class="nav-link scrollto" href="#about">À propos</a></li>
-          <li><a class="nav-link scrollto" href="#services">Help</a></li>
+          <li><a class="nav-link scrollto" href="#services">Aide</a></li>
+          <li><a class="nav-link scrollto" href="#maj">Changelog</a></li>
           <li><a class="nav-link scrollto" href="#features">Prochainement</a></li>
           <li><a class="nav-link scrollto" href="https://bit.ly/33sfsMv">Github</a></li>
 
@@ -61,7 +145,6 @@
 
     </div>
   </header><!-- End Header -->
-
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex align-items-center">
 
@@ -205,7 +288,7 @@
 
   <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="20">
     <div class="icon-box iconbox-blue">
-      <h4>set_birthday / add_birthday <br> &lt;JJ mois AAAA&gt;</h4>
+      <h4>set_birthday / add_birthday <br> &lt;JJ mois AAAA&gt;</h4><h11>(AAAA est un argument facultatif)</h11>
       <p><b>Description : </b>Ajouter ou modifier la date de son anniversaire.<br><b>Permission : </b>Aucune.<br><b>WARN: </b>Votre anniversaire est affiché sur tous les serveurs où vous êtes et où est Elbot. Pas besoin de mettre plein de fois son anniversaire sur plein de serveurs.<br>C'est cool hein :S</b></p>
     </div>
   </div>
@@ -441,6 +524,13 @@
 
     <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="20">
       <div class="icon-box iconbox-blue">
+        <h4>loop</h4>
+        <p><b>Description : </b>Lis la musique en boucle<br><b>Permission : </b>Se connecter à un salon vocal et parler.<br><b>WARN : </b>Aucun</b>
+      </div>
+    </div>
+
+    <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="20">
+      <div class="icon-box iconbox-blue">
         <h4>skip</h4>
         <p><b>Description : </b>Passe la musique.<br><b>Permission : </b>Se connecter à un salon vocal et parler.<br><b>WARN : </b>Aucun</b>
       </div>
@@ -449,16 +539,74 @@
   
     <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="20">
       <div class="icon-box iconbox-blue">
-        <h4>brique</h4> <h10><b>Commande non fonctionnelle pour l'instant</b></h10>
+        <h4>brique</h4> <h10><b>Commande non foncti
+          onnelle pour l'instant</b></h10>
         <p><b>Description : </b>Pour que elbot chante tutititutu<br><b>Permission : </b>Se connecter à un salon vocal et parler.<br><b>WARN : </b>Aucun
       </div>
     </div>
   
 
-    </section><!-- End Features Section -->
+    </section><!-- End Help Section -->
+      <!-- ======= maj Section ======= -->
+      <section id="maj" class="maj">
+        <div class="container" data-aos="fade-up">
+  
+          <div class="section-title">
+            <h2>Changelog</h2>
+            <p>Ici vous trouverez les corrections et les mise à jour du bot.</p>
+          </div>
+          <div class="icon-box mt-5" data-aos="fade-up" data-aos-delay="300">
+            <h4 id="maj_firstTitle">v3.2.1 21 décembre 2021</h4>
+            <p id="maj_firstP"><b>------ Nouveautés ---------</b>
+              <br>COMPATIBLE AVEC SUPABASE:
+              <br>• Commande birthday (stable)
+              <br><br>------ Erreur ------------
+              <br>• Ajout d'un embed pour les erreurs
+              <br>------ Corrections ------------
+              <br>• e!contact : Je sais désormais qui envoie le message et d'où
+              <br>• e!close : Plus possible de fermer n'importe quelle salon sur le serveur elwatch
+              <br>• e!ticket : Envoie d'un message dans le ticket créé si le ticket est de type 1`</p>
+          </div>
+              <div class="icon-box mt-5" data-aos="fade-up" data-aos-delay="300">
+                <h4 id="maj_secondTitle">v3.2 20 décembre 2021</h4>
+                <p id="maj_secondP"><b>------ Nouveautés ---------</b>
+                  <br>COMPATIBLE AVEC SUPABASE:
+                  <br>• Commande birthday (stable)
+                  <br><b>------ Erreur ------------</b>
+                  <br>• Ajout d'un embed pour les erreurs
+                  <br><br><b>------ Corrections ------------</b>
+                  <br>• e!contact : Je sais désormais qui envoie le message et d'où
+                  <br>• e!close : Plus possible de fermer n'importe quelle salon sur le serveur elwatch
+                  <br>• e!ticket : Envoie d'un message dans le ticket créé si le ticket est de type 1</p>
+              </div>
+              <div class="icon-box mt-5" data-aos="fade-up" data-aos-delay="300">
+                <h4 id="maj_thirdTitle">v3.0.3 15 novembre 2021</h4>
+                <p id="maj_thirdP"><b>------ Nouveautés ---------</b>
+                                  <br>Amélioration du code.
+                                  <br>Nouvelles commandes embed
+                                  <br>Nouvelle commande list_color
+                                  <br>Nouvelle commande qi
+                                  <br><br><b>------ Corrections et améliorations---------</b>
+                                  <br>Correction de l'event listen messages
+                                  <br>Réponse kick amélioré
 
-   
-    <!-- ======= Features Section ======= -->
+        </div>
+        </div>
+
+        <nav aria-label="Page navigation example">
+          <ul class="pagination justify-content-center">
+            <li id="maj_btn_previousPage" class="page-item">
+            </li>
+            <li class="page-item"><a class="page-link" onclick="changePage(1)" href="javascript:void(0)">1</a></li>
+            <li class="page-item"><a class="page-link" onclick="changePage(2)" href="javascript:void(0)">2</a></li>            <li id="maj_btn_nextPage" class="page-item">
+            </li>
+          </ul>
+        </nav>
+        </nav>
+      </section><!-- End maj Section -->
+      
+      
+      <!-- ======= Features Section ======= -->
     <section id="features" class="features">
       <div class="container" data-aos="fade-up">
 
@@ -466,23 +614,10 @@
           <h2>Prochainement</h2>
           <p>Ici vous trouverez les prochaines commandes prévues.</p>
         </div>
-
-        <div class="row">
-          <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column align-items-lg-center">
-            <div class="icon-box mt-5 mt-lg-0" data-aos="fade-up" data-aos-delay="100">
-              <h4>loop</h4>
-              <p>Une commande loop qui servira à répeter un boucle une musique</p>
-            </div>
-            <div class="icon-box mt-5" data-aos="fade-up" data-aos-delay="200">
-              <h4>ytb</h4>
-              <p>Cette commande permettera de regarder une vidéo Youtube</p>
-            </div>
             <div class="icon-box mt-5" data-aos="fade-up" data-aos-delay="300">
-              <h4>sticksay</h4>
-              <p>Une commande qui permettera de faire parler un stickman (homme baton).</p>
+              <h4>set_rep</h4>
+              <p>Si vous souhaitez ou non les réponses automatiques de elbot (désactiver par défaut)</p>
             </div>
-          </div>
-        </div>
 
       </div>
     </section><!-- End Features Section -->
@@ -492,11 +627,6 @@
 
 
    
-
-  
-
-    
-
   </main><!-- End #main -->
 
   <!-- ======= Footer ======= -->
