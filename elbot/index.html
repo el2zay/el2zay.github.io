@@ -27,89 +27,7 @@
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 
-  <!-- Script pour changer de page -->
-  <script>
-    var currentPage = 1
-    window.onload = function (){
-    changePage(1)
-    }
-    function changePage(page){
-      // Obtenir quelques éléments
-      var firstTitle = document.getElementById("maj_firstTitle");
-      var firstP = document.getElementById("maj_firstP");
-      var secondTitle = document.getElementById("maj_secondTitle");
-      var secondP = document.getElementById("maj_secondP");
-      var thirdTitle = document.getElementById("maj_thirdTitle");
-      var thirdP = document.getElementById("maj_thirdP");
-      
-      // Si la page est la première
-      if(page === 1) document.getElementById("maj_btn_nextPage").classList.remove("disabled");
-      if(page === 1) document.getElementById("maj_btn_previousPage").classList.add("disabled");
-      
-      // Si la page est la dernière
-      if(page === 2) document.getElementById("maj_btn_nextPage").classList.add("disabled");
-      if(page === 2) document.getElementById("maj_btn_previousPage").classList.remove("disabled");
-      
-      // Changer les éléments
-        // Page numéro 1
-        if(page === 1){
-          firstTitle.innerText = 'v3.1.1 21 décembre 2021'
-          firstP.innerHTML = `<b>--- Nouveautés ---</b><br>-Commande birthday :<br>• Nouvelles erreurs lorsque vous saisissez un date invalide<br>• Date d'anniversaire affiché sur tous les serveurs où vous êtes. Plus besoin de le remettre sur chaque serveur<br>• LowerCase pour pouvoir écrit son mois de naissance comme vous le souhaitez.<br><br><b>--- Correction ---</b><br>• Les réactions ont été corrigé suite à la suppression du serveur discord "Ubuntu le best"`
-          
-          secondTitle.innerText = 'v3.1.0 20 décembre 2021'
-          secondP.innerHTML = `------ Nouveautés ---------
-                            <br>COMPATIBLE AVEC SUPABASE:
-                            <br>• Commande birthday (stable)
-                            <br><br>------ Erreur ------------
-                            <br>• Ajout d'un embed pour les erreurs
-                            <br>------ Corrections ------------
-                            <br>• e!contact : Je sais désormais qui envoie le message et d'où
-                            <br>• e!close : Plus possible de fermer n'importe quelle salon sur le serveur elwatch
-                            <br>• e!ticket : Envoie d'un message dans le ticket créé si le ticket est de type 1`
-          
-         thirdTitle.innerText = 'v3.0.3 15 novembre 2021'
-          thirdP.innerHTML = `<b>------ Nouveautés ---------</b>
-                              <br>Amélioration du code.
-                              <br>Nouvelles commandes embed
-                              <br>Nouvelle commande list_color
-                              <br>Nouvelle commande qi
-                              <br><br><b>------ Corrections et améliorations---------</b>
-                              <br>Correction de l'event listen messages
-                              <br>Réponse kick amélioré`
-          
-        }
-        // Page numéro 2
-        if(page === 2){
-          firstTitle.innerText = 'v3.0.0 6 novembre 2021'
-          firstP.innerHTML = `<b>--- Nouveautés ---</b>
-                              <br>Suppression de quelques lignes inutiles.
-                              <br>Suppression du code JS passage du bot en full Python (passage à la v3).
-                              <br>Nouvelle commande pfc
-                              <br>Vous envoie un mp lorsque vous avez été bannis d'un serveur avec la commande ban.
-                              `
-            secondTitle.innerText = 'v2.1.2 14 octobre 2021'
-            secondP.innerHTML = `<b>--- Nouveautés ---</b>
-                                <br>- Aliase serverinfo, serverinfo2/
-                                <br>- Commande userinfo
-                                <br>- Commande lock
-                                <br>- Commande unlock
-                                <br>- Commande cuisiner
-                                <br>- Commande mute
-                                <br>- Commande unmute
-                                <br>- Les boutons sont désormais disponible pour de futur commandes
-                                <br>- Commande slash infoserver et  infoserver2`
 
-            thirdTitle.innerText = 'v2.1.1 24 septembre 2021'
-            thirdP.innerHTML = `<b>--- Nouveautés ---</b>
-                                <br>- Reconstruction du code
-                                <br>- Compatible djs v13`}
-
-      // Modifier la variable contenant la page affiché
-      currentPage = page
-    }
-
-
-  </script>
   <!-- =======================================================
   * Template Name: Techie - v4.3.0
   * Template URL: https://bootstrapmade.com/techie-free-skin-bootstrap-3/
@@ -132,7 +50,6 @@
           <li><a class="nav-link scrollto active" href="#hero">Accueil</a></li>
           <li><a class="nav-link scrollto" href="#about">À propos</a></li>
           <li><a class="nav-link scrollto" href="#services">Aide</a></li>
-          <li><a class="nav-link scrollto" href="#maj">Changelog</a></li>
           <li><a class="nav-link scrollto" href="#features">Prochainement</a></li>
           <li><a class="nav-link scrollto" href="https://bit.ly/33sfsMv">Github</a></li>
 
@@ -184,7 +101,7 @@
           <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content" data-aos="fade-right">
             <h3>Concrètement, Elbot c'est quoi?</h3>
             <p class="fst-normal">
-              Elbot est un bot discord créé et codé par <a href="https://el2zay.is-a.dev">el2zay</a> et codé aussi à l'aide de <a href="https://johan-stickman.is-a.dev">Johan</a>. <br> Il a des fonctions basiques comme des commandes clear,say et infoserver. Il permet de diffuser de la musique dans des salons vocaux. Elbot est un bot principalement fun, il a plusieurs références françaises et il a plein d'autres fonctionnalités. Bien entendu Elbot est toujours en cours de développement et j'ajoute petit à petit des fonctions chaque semaine.<br>
+              Elbot est un bot discord créé et codé par <a href="https://el2zay.is-a.dev">el2zay</a> et codé aussi avec l'aide de <a href="https://johan-stickman.is-a.dev">Johan</a>. <br> Il a des fonctions basiques comme des commandes clear,say et infoserver. Il permet de diffuser de la musique dans des salons vocaux. Elbot est un bot principalement fun, il a plusieurs références françaises et il a plein d'autres fonctionnalités. Bien entendu Elbot est toujours en cours de développement et j'ajoute petit à petit des fonctions chaque semaine.<br>
              Pour voir toutes les commandes vous pouvez voir la page <a href="#services">d'aide</a></li>
             </li></a>
             
@@ -194,7 +111,7 @@
               <li><i class="bi bi-check-circle"></i> Gratuit et Open Source</li>
               <li><i class="bi bi-check-circle"></i> Codé 100% en Python</li>
               <li><i class="bi bi-check-circle"></i>Musique</li>
-              <li><i class="bi bi-check-circle"></i>Surveillé par Watchbot</li>
+              <li><i class="bi bi-check-circle"></i>Surveillé par Elwatch</li>
               <li><i class="bi bi-check-circle"></i>Database</li>
             </ul>
           </div>
@@ -210,11 +127,18 @@
 
         <div class="section-title">
           <h2>Page d'aide</h2>
-          <p>Ici vous trouverez toutes les commandes de Elbot. (le prefix est "e!") [mise à jour: 06/01/2022 16h00]<br> <h8>48 commandes fonctionnelles et publiques.</h8></p>
+          <p>Ici vous trouverez toutes les commandes de Elbot. Le prefix par défaut est e!. [mise à jour: 26/03/2022 21h40]<br> <h8>50 commandes fonctionnelles et publiques.</h8></p>
         </div>
+
 <div><b>COMMANDES ÉCRITES</b></div>
       
 <div class="row">
+  <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="20">
+    <div class="icon-box iconbox-blue">
+      <h4>prefix  &lt;newprefix&gt;</h4>
+      <p><b>Description : </b>Changer le prefix du bot<br><b>Permission : </b>Administrateur. </p>
+    </div>
+  </div>
 
   <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="20">
     <div class="icon-box iconbox-blue">
@@ -226,7 +150,7 @@
   <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="20">
     <div class="icon-box iconbox-blue">
       <h4>chinese &lt;texte&gt;</h4>
-      <p><b>Description : </b>Pour me faire dire tout et n'importe quoi mais où les caractères sont transformés en caractères chinois.<br><b>Permission : </b>Gérer les messages<br><b>WARN : </b>Vous ne pouvez pas mentionner @here/@everyone</b> <br> <b> Exepmle: </b> e!chinesse Bonjour Elbot répond: <br>书口冂丿口凵尺</p>
+      <p><b>Description : </b>Pour me faire dire tout et n'importe quoi mais où les caractères sont transformés en caractères chinois.<br><b>Permission : </b>Gérer les messages<br><b>WARN : </b>Vous ne pouvez pas mentionner @here/@everyone</b> <br> <b> Exemple: </b> e!chinesse Bonjour Elbot répond: <br>书口冂丿口凵尺</p>
     </div>
   </div>
 
@@ -257,6 +181,12 @@
         <p><b>Description : </b>Compter le nombre de caractères dans un mot ou une phrase.<br><b>Permission : </b>Aucune<br><b>WARN : </b>Aucun</p> </div>
       </div>
 
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="20">
+    <div class="icon-box iconbox-blue">
+      <h4>note<br> &lt;int&gt;</h4>
+      <p><b>Description : </b>Convertir vos notes sur 20 et sur 10.<br><b>Permission : </b>Aucune.<br><b>Exemple: </b>e!note 30/76 </p>
+    </div>
+  </div>
 
   <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="20">
     <div class="icon-box iconbox-blue">
@@ -268,23 +198,25 @@
   <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="20">
     <div class="icon-box iconbox-blue">
       <h4>infoserver/serverinfo</h4>
-      <p><b>Description : </b>Pour connaitre les informations importantes sur ce serveur<br><b>Permission : </b>Aucune embed<br><b>WARN: </b>Aucun</b></p>
+      <p><b>Description : </b>Pour connaitre les informations importantes sur ce serveur<br><b>Permission : </b>Aucune<br><b>WARN: </b>Aucun</b></p>
     </div>
   </div>
 
   <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="20">
     <div class="icon-box iconbox-blue">
-      <h4>infoserver2/serverinfo2</h4>
-      <p><b>Description : </b>Suite sur infoverser/serverinfo<br><b>Permission : </b>Aucune embed<br><b>WARN: </b>Aucun</b></p>
+      <h4>infobot / botinfo </h4>
+      <p><b>Description : </b>Pour connaitre les informations sur le bot<br><b>Permission : </b>Aucune<br><b>WARN: </b>Aucun</b></p>
     </div>
   </div>
 
   <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="20">
     <div class="icon-box iconbox-blue">
       <h4>infouser / avatar &lt;user&gt;</h4><h11>(argument facultatif)</h11>
-      <p><b>Description : </b>Pour connaitre les informations sur un utilisateur<br><b>Permission : </b>Aucune embed<br><b>WARN: </b>Aucun</b></p>
+      <p><b>Description : </b>Pour connaitre les informations sur un utilisateur<br><b>Permission : </b>Aucune<br><b>WARN: </b>Aucun</b></p>
     </div>
   </div>
+
+
   <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="20">
     <div class="icon-box iconbox-blue">
       <h4>set_rep / set_reply <br> &lt;option&gt;</h4>
@@ -316,7 +248,6 @@
   <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="20">
     <div class="icon-box iconbox-blue">
       <h4>chat<br> &lt;question&gt;</h4>
-      <h4 class="title"><a href="https://el2zay.is-a.dev/inarretable">Inarrêtable</a></h4>
       <p><b>Description : </b>Un assistant virtuel qui se base sur vos réponses.<br><b>Permission : </b>Aucune.<br><b>WARN: </b>Cliquez sur le titre pour plus d'informations ! </p>
     </div>
   </div>
@@ -338,13 +269,13 @@
   <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="20">
     <div class="icon-box iconbox-blue">
       <h4>ping</h4>
-      <p><b>Description : </b>Affiche le temps de latence du bot en ms.<br><b>Permission : </b>Aucune<br><b>WARN : </b>Aucun</b>
+      <p><b>Description : </b>Affiche le temps de latence du bot et du temps de réponse de Discord en ms.<br><b>Permission : </b>Aucune<br><b>WARN : </b>Aucun</b>
     </div>
   </div>
 
   <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="20">
     <div class="icon-box iconbox-blue">
-      <h4>clear &lt;nombre&gt;</h4> <h10>Commande fonctionnant mal</h10>
+      <h4>clear &lt;nombre&gt;</h4>
       <p><b>Description : </b>Pour clear le nombre de message que vous souhaitiez <br><b>Permission : </b>Gérer les messages<br><b>WARN : </b>Aucun</b>
     </div>
   </div>
@@ -380,6 +311,13 @@
       <p><b>Description : </b>Pour connaitre une anecdote sur Elbot.<br><b>Permission : </b>Aucune<br><b>WARN : </b>Aucun
     </div>
   </div>
+
+  <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="20">
+    <div class="icon-box iconbox-blue">
+      <h4>nuke</h4>
+      <p><b>Description : </b>Supprimer un salon entièrement puis le recréé identiquement sans les messages.<br><b>Permission : </b>Supprimer et créé des salons.<br><b>WARN:</b> Seul l'owner du serveur peut faire cette commande </p>
+    </div>
+  </div>
   <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="20">
     <div class="icon-box iconbox-blue">
       <h4>kick &lt;membre&gt;</h4>
@@ -397,9 +335,7 @@
       <h4>unban &lt;membre&gt;</h4>
       <p><b>Description : </b>Pour débannir un membre sur un serveur<br><b>Permission : </b>Bannir un membre<br><b>Exemple : </b>e!unban el2zay#1234
     </div>
-
   </div>
-
 
  <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="20">
     <div class="icon-box iconbox-blue">
@@ -431,22 +367,15 @@
 
   <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="20">
     <div class="icon-box iconbox-blue">
-      <h4>timer/minuteur &lt;secondes&gt;</h4><h10><b>VERSION BETA </b></h10>
+      <h4>timer/minuteur &lt;secondes&gt;</h4>
       <p><b>Description : </b>Pour lancer un minuteur à la fin de ce minuteur vous serez averti par MP<br><b>Permission </b>: Aucune</b>.<br><b>WARN : </b>Secondes uniquement pour l'instant</p>
     </div>
   </div>
 
   <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="20">
     <div class="icon-box iconbox-blue">
-      <h4>removebg &lt;lien&gt;</h4>
-      <p><b>Description : </b><br>Enlever l'arrière plan d'un image.<br><b>Permission :</b> Envoyer un lien, Envoyer une image</b>.<br><b>WARN : </b>Un lien est requis. <br>Powered by removebg</p>
-    </div>
-  </div>
-
-  <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="20">
-    <div class="icon-box iconbox-blue">
-      <h4>watchbot</h4>
-      <p><b>Description : </b><br>Voir le statut des bots amis à Elbot au fil du temps à l'aide de Watchbot<br><b>Permission :</b> Aucune</b>.<br><b>WARN : </b> Aucun. </p>
+      <h4>removebg &lt;lien ou mention&gt;</h4>
+      <p><b>Description : </b><br>Enlever l'arrière plan d'un image.<br><b>Permission :</b> Envoyer un lien, Envoyer une image</b>.<br><b>WARN : </b>Un lien est requis ou un @ pour enlever le background de la photo de profil d'un membre du serveur. <br>Powered by removebg</p>
     </div>
   </div>
 
@@ -477,13 +406,24 @@
       <p><b>Description : </b>Faire un pierre feuille ciseaux<br><b>Permission : </b>Envoyer des messages.<br><b>Exemple : </b>e!pfc pierre </p>
     </div>
   </div>
+
+
+  <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="20">
+    <div class="icon-box iconbox-blue">
+      <h4>8ball</h4>
+      <p><b>Description : </b>Une 8ball qui répond au hasard Oui,Non,Peut-être et pleins d'autres<br><b>Permission : </b>Envoyer des messages. </p>
+    </div>
+  </div>
+
+
   <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="20">
     <div class="icon-box iconbox-blue">
       <h4>qi &lt;membre&gt;</h4><h11>(argument facultatif)</h11>
       <p><b>Description : </b>Connaitre son QI ou celui d'un autre membre/bot du serveur.<br><b>Permission : </b>Envoyer des messages.<br><b>WARN:</b> Aucun </p>
     </div>
-  </div>
 
+
+  </div>
   <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="20">
     <div class="icon-box iconbox-blue">
       <h4>reverse</h4>
@@ -491,11 +431,10 @@
     </div>
   </div>
 
-
   <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="20">
     <div class="icon-box iconbox-blue">
-      <h4>dm &lt;ID&gt;</h4>
-      <p><b>Description : </b>Pour me faire dire tout et n'importe quoi en mp a des personnes grâce à leurs ID's<br><b>WARN : </b>Il est obligatoire de mettre l'ID d'une personne et pas sa mention. <br><b>Exemple:</b>e!dm 727572859727380531 tu es un magnifique Nyan Cat<br><b>IMPORTANT: </b>Si vous subissez un harcélement ou que vous souhaitiez juste que personne ne vous MP sous l'identité de elbot MP el2zay sur un de ses réseaux pour qu'il ne soit plus possible à quiconque de vous MP sous l'identité de elbot.</p>
+      <h4>rickdetect &lt;lien&gt;</h4>
+      <p><b>Description : </b>Détecte un rickroll<br><b>Permission : </b>Aucune<br> <br>Powered by rickdetect</a> </p>
     </div>
   </div>
 
@@ -560,63 +499,29 @@
   
 
     </section><!-- End Help Section -->
-      <!-- ======= maj Section ======= -->
-      <section id="maj" class="maj">
-        <div class="container" data-aos="fade-up">
+
+      <!-- ======= comments =========
+      <div id="disqus_thread"></div>
+<script>
+    /**
+    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+    var disqus_config = function () {
+    this.page.url = 'https://el2zay.disqus.com';  // Replace PAGE_URL with your page's canonical URL variable
+    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+
+    (function() { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+    s.src = 'https://el2zay.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+ -->
+
   
-          <div class="section-title">
-            <h2>Changelog</h2>
-            <p>Ici vous trouverez les corrections et les mise à jour du bot.</p>
-          </div>
-          <div class="icon-box mt-5" data-aos="fade-up" data-aos-delay="300">
-            <h4 id="maj_firstTitle">v3.2.1 21 décembre 2021</h4>
-            <p id="maj_firstP"><b>------ Nouveautés ---------</b>
-              <br>COMPATIBLE AVEC SUPABASE:
-              <br>• Commande birthday (stable)
-              <br><br>------ Erreur ------------
-              <br>• Ajout d'un embed pour les erreurs
-              <br>------ Corrections ------------
-              <br>• e!contact : Je sais désormais qui envoie le message et d'où
-              <br>• e!close : Plus possible de fermer n'importe quelle salon sur le serveur elwatch
-              <br>• e!ticket : Envoie d'un message dans le ticket créé si le ticket est de type 1`</p>
-          </div>
-              <div class="icon-box mt-5" data-aos="fade-up" data-aos-delay="300">
-                <h4 id="maj_secondTitle">v3.2 20 décembre 2021</h4>
-                <p id="maj_secondP"><b>------ Nouveautés ---------</b>
-                  <br>COMPATIBLE AVEC SUPABASE:
-                  <br>• Commande birthday (stable)
-                  <br><b>------ Erreur ------------</b>
-                  <br>• Ajout d'un embed pour les erreurs
-                  <br><br><b>------ Corrections ------------</b>
-                  <br>• e!contact : Je sais désormais qui envoie le message et d'où
-                  <br>• e!close : Plus possible de fermer n'importe quelle salon sur le serveur elwatch
-                  <br>• e!ticket : Envoie d'un message dans le ticket créé si le ticket est de type 1</p>
-              </div>
-              <div class="icon-box mt-5" data-aos="fade-up" data-aos-delay="300">
-                <h4 id="maj_thirdTitle">v3.0.3 15 novembre 2021</h4>
-                <p id="maj_thirdP"><b>------ Nouveautés ---------</b>
-                                  <br>Amélioration du code.
-                                  <br>Nouvelles commandes embed
-                                  <br>Nouvelle commande list_color
-                                  <br>Nouvelle commande qi
-                                  <br><br><b>------ Corrections et améliorations---------</b>
-                                  <br>Correction de l'event listen messages
-                                  <br>Réponse kick amélioré
-
-        </div>
-        </div>
-
-        <nav aria-label="Page navigation example">
-          <ul class="pagination justify-content-center">
-            <li id="maj_btn_previousPage" class="page-item">
-            </li>
-            <li class="page-item"><a class="page-link" onclick="changePage(1)" href="javascript:void(0)">1</a></li>
-            <li class="page-item"><a class="page-link" onclick="changePage(2)" href="javascript:void(0)">2</a></li>            <li id="maj_btn_nextPage" class="page-item">
-            </li>
-          </ul>
-        </nav>
-        </nav>
-      </section><!-- End maj Section -->
       
       
       <!-- ======= Features Section ======= -->
@@ -630,10 +535,6 @@
             <div class="icon-box mt-5" data-aos="fade-up" data-aos-delay="300">
               <h4>slowmode</h4>
               <p>Modifier le mode lent dans un salon.</p>
-            </div>
-            <div class="icon-box mt-5" data-aos="fade-up" data-aos-delay="300">
-              <h4>infobot</h4>
-              <p>Toutes les informations du bot réunie en une commande</p>
             </div>
       </div>
     </section><!-- End Features Section -->
